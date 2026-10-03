@@ -1,0 +1,13 @@
+{
+  "name": "solidity-nft-escrow-market",
+  "title": "Escrowed NFT marketplace",
+  "contract": "NFTMarket",
+  "description": "ERC721 custody listings with fixed token prices, royalty caps, cancellation and pull-based sale proceeds.",
+  "args": [
+    "$TOKEN",
+    250,
+    "$TREASURY",
+    "$ADMIN"
+  ],
+  "assumptions": "ERC721 escrow and standard ERC20 settlement. Royalties are seller-declared and capped by the total payout budget, not authoritative ERC2981 royalty enforcement. Direct unsolicited NFT transfers are not recoverable; only list() creates tracked listings."
+}
